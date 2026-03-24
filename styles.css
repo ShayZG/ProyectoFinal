@@ -1,21 +1,19 @@
-/* ===== RESET GENERAL ===== */
-/* Se eliminan márgenes y espacios por defecto */
+
+/* Ajuste general*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== HERENCIA EN CSS ===== */
-/* El body hereda fuente, color y altura de línea a casi toda la página */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #1e3932;
   line-height: 1.5;
   background-color: #ffffff;
+   overflow-x: hidden;
 }
 
-/* Los enlaces heredan color y se les quita el subrayado */
 a {
   text-decoration: none;
   color: inherit;
@@ -159,51 +157,51 @@ img {
 }
 
 /* ===== SECCIÓN PROMOCIONAL ===== */
-/* Se usa flexbox para dividir texto e imagen en dos columnas */
-.promo {
-  min-height: 500px;
-  background-color: #d4e9e2;
 
+.promo {
   display: flex;
   align-items: stretch;
+  min-height: 520px;
+  background-color: #d4e9e2;
 }
 
-/* Cada parte ocupa la mitad del ancho */
 .txt,
 .img {
   width: 50%;
+  min-height: 520px;
 }
 
-/* Texto centrado usando flexbox */
 .txt {
-  padding: 40px;
-  text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 40px 60px;
 }
 
-/* Título */
 .txt h2 {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   margin-bottom: 18px;
+  max-width: 420px;
 }
 
-/* Párrafo */
 .txt p {
-  font-size: 1.1rem;
-  max-width: 450px;
-  margin-bottom: 18px;
+  font-size: 1.2rem;
+  max-width: 380px;
+  margin-bottom: 22px;
 }
 
-/* La imagen llena su espacio */
+.img {
+  overflow: hidden;
+}
+
 .img img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
-
 /* ===== FOOTER ===== */
 /* Sección inferior de la página */
 .pie {
