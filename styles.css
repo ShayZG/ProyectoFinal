@@ -220,7 +220,7 @@ main {
 }
 
 .promo-lavanda {
-  background-color: #d6d7b7;
+  background-color:#E6E6FA;
 }
 
 .promo-verde {
@@ -276,9 +276,10 @@ main {
 
 .mini-img img {
   width: 100%;
-  height: 100%;
+  height: 340px;
   object-fit: cover;
-  object-position: center;
+  object-position: 70% center;
+  display:block;
 }
 
 .mini-txt {
