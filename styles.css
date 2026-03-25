@@ -1,3 +1,5 @@
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////                 Pagina de inicio                                     ////////////////////////////////*/
 /* Ajuste general*/
 * {
   margin: 0;
@@ -5,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* ===== HERENCIA ===== */
+/* texto */
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #1e3932;
@@ -24,14 +26,14 @@ img {
   display: block;
 }
 
-/* ===== CONTENEDOR GENERAL ===== */
+/* contenedor*/
 main {
   max-width: 1280px;
   margin: 0 auto;
   padding: 24px;
 }
 
-/* ===== ENCABEZADO ===== */
+/* encabezado */
 .encabezado {
   position: sticky;
   top: 0;
@@ -69,7 +71,7 @@ main {
   width: 50px;
 }
 
-/* ===== MENÚ ===== */
+/* menu para cambiar de pagina */
 .nav {
   display: flex;
   gap: 28px;
@@ -87,7 +89,7 @@ main {
   color: #d4e9e2;
 }
 
-/* ===== BOTONES NAVBAR ===== */
+/* botones */
 .claro,
 .oscuro {
   display: inline-block;
@@ -97,21 +99,21 @@ main {
   font-weight: bold;
 }
 
-/* Ingresar */
+/* ingresar */
 .claro {
   background-color: transparent;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
 
-/* Únete */
+/* unete */
 .oscuro {
   background-color: #000000;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
 
-/* Hover sencillo */
+/* cambiar colores de botones*/
 .claro:hover {
   background-color: rgba(255,255,255,0.1);
 }
@@ -120,7 +122,7 @@ main {
   background-color: #333333;
 }
 
-/* ===== BOTONES GENERALES ===== */
+/* botones en general */
 .btn,
 .borde-blanco,
 .btn-blanco,
@@ -155,7 +157,7 @@ main {
   border: 1px solid #f3e9c9;
 }
 
-/* ===== PROMOCIONALES ===== */
+/* promociones*/
 .promo {
   width: 100%;
   min-height: 520px;
@@ -203,7 +205,7 @@ main {
   object-fit: cover;
 }
 
-/* ===== COLORES ===== */
+/* configuracion de color de cuadros de promociones*/
 .promo-inicio {
   background-color: #d9e8e3;
 }
@@ -232,7 +234,7 @@ main {
   color: #f3e9c9;
 }
 
-/* ===== BLOQUE DOBLE ===== */
+/* los dos bloques divididos */
 .doble {
   display: flex;
   gap: 24px;
@@ -282,7 +284,7 @@ main {
   font-size: 1.1rem;
 }
 
-/* ===== FOOTER ===== */
+/* "footer" o pie de pagina */
 .pie {
   background-color: #f7f7f7;
   border-top: 1px solid #d9d9d9;
@@ -353,7 +355,7 @@ main {
   filter: invert(1);
 }
 
-/* ===== links reales ===== */
+/* links reales*/
 .real {
   display: flex;
   justify-content: center;
@@ -377,7 +379,7 @@ main {
   color: #c4c4c4;
 }
 
-/* Hover */
+/* cambio de color al selecionar */
 .real a:hover {
   color: #1e3932;
 }
@@ -393,13 +395,13 @@ main {
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/* PÁGINA REWARDS */
+/* ////////////////////////////////////////////     PÁGINA REWARDS     ////////////////////////////////////////////////////////////////////////*/
 .rewards-page {
   display: flex;
   align-items: flex-start;
 }
 
-/* LADO IZQUIERDO */
+/* lado izquierdo */
 .rewards-left {
   width: 40%;
   min-height: calc(100vh - 86px);
@@ -469,13 +471,13 @@ main {
   margin-top: 10px;
 }
 
-/* LADO DERECHO */
+/* lado derecho*/
 .rewards-right {
   width: 60%;
   background-color: #f7f7f2;
 }
 
-/* SECCIÓN BENEFICIOS */
+/* beneficios */
 .beneficios-gold {
   padding: 70px 60px;
 }
@@ -488,7 +490,7 @@ main {
   margin-bottom: 50px;
 }
 
-/* GRID */
+/* usando grid*/
 .grid-beneficios {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -514,8 +516,8 @@ main {
   max-width: 190px;
   margin: 0 auto;
 }
-
-/* TABLET */
+/* Media queries */
+/* tablet */
 @media (max-width: 1100px) {
   .contenido-left h1 {
     font-size: 3.2rem;
@@ -531,7 +533,7 @@ main {
   }
 }
 
-/* CELULAR */
+/* telefono celular */
 @media (max-width: 768px) {
   .rewards-page {
     flex-direction: column;
@@ -581,5 +583,147 @@ main {
 
   .item-beneficio p {
     max-width: 250px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////    Menu     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.menu-page {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* menu */
+.menu-menu {
+  min-height: 360px;
+  background: linear-gradient(to right, #d4e9e2, #f1f8f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+}
+
+.menu-menu-texto {
+  text-align: center;
+  max-width: 700px;
+  color: #1e3932;
+}
+
+.menu-mini {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.menu-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 14px;
+}
+
+.menu-subtexto {
+  font-size: 1.15rem;
+}
+
+/* tipos de cafes */
+.menu-categorias {
+  padding: 60px 40px 80px;
+  background-color: #f9f9f6;
+}
+
+.menu-categorias h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e3932;
+  margin-bottom: 40px;
+}
+
+.grid-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card-menu {
+  background-color: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.card-menu img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.card-menu h3 {
+  font-size: 1.3rem;
+  color: #1e3932;
+  margin: 0 18px 12px;
+}
+
+.card-menu p {
+  font-size: 0.98rem;
+  color: #4b5563;
+  line-height: 1.5;
+  max-width: 280px;
+  margin: 0 auto 20px;
+}
+
+.btn-menu {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: 1px solid #1e3932;
+  color: #1e3932;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.btn-menu:hover {
+  background-color: #1e3932;
+  color: #ffffff;
+}
+
+/* media queries */
+@media (max-width: 1100px) {
+  .grid-menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-hero h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-categorias {
+    padding: 45px 20px 60px;
+  }
+
+  .grid-menu {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-hero {
+    min-height: 280px;
+    padding: 50px 20px;
+  }
+
+  .menu-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu-subtexto {
+    font-size: 1rem;
+  }
+
+  .card-menu img {
+    height: 210px;
   }
 }
