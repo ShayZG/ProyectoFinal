@@ -780,66 +780,69 @@ main {
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*///////////////    MENU 2 - estilo más parecido al original     //////////////////////////////////////////////////////////////////////////////*/
+/*///////////////    menu 2, segundo intento   //////////////////////////////////////////////////////////////////////////////*/
 
 .menu2-header {
   background-color: #ffffff;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .menu2-header .nav a {
   color: #000000;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .menu2-header .nav a:hover {
   color: #006241;
 }
 
-.menu2-derecha {
+.menu2-right {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
 .menu2-store {
-  font-weight: bold;
   color: #000000;
+  font-weight: bold;
   margin-right: 8px;
 }
 
-.menu2-btn-claro,
-.menu2-btn-oscuro {
+.menu2-btn-light,
+.menu2-btn-dark {
   display: inline-block;
   padding: 7px 16px;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-.menu2-btn-claro {
+.menu2-btn-light {
   color: #000000;
   border: 1px solid #000000;
   background-color: transparent;
 }
 
-.menu2-btn-oscuro {
+.menu2-btn-light:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.menu2-btn-dark {
   color: #ffffff;
   border: 1px solid #000000;
   background-color: #000000;
 }
 
-.menu2-btn-claro:hover {
-  background-color: rgba(0,0,0,0.06);
-}
-
-.menu2-btn-oscuro:hover {
+.menu2-btn-dark:hover {
   background-color: #333333;
 }
 
 .menu2-page {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 38px 28px 70px;
+  padding: 30px 40px 60px;
   background-color: #f6f6f4;
 }
 
@@ -848,30 +851,31 @@ main {
 }
 
 .menu2-kicker {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: #1e3932;
+  color: #075d46;
   margin-bottom: 8px;
 }
 
 .menu2-top h1 {
-  font-size: 3rem;
-  line-height: 1.15;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2;
   color: #1e3932;
   max-width: 700px;
 }
 
-.menu2-bloque {
-  margin-top: 26px;
+.menu2-block {
+  margin-top: 40px;
 }
 
-.menu2-bloque h2 {
+.menu2-block h2 {
   font-size: 2rem;
   color: #1e3932;
   font-weight: 700;
   padding: 18px 0 14px;
-  border-top: 1px solid #a8a8a8;
-  border-bottom: 1px solid #a8a8a8;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 34px;
 }
 
@@ -883,25 +887,32 @@ main {
   padding-left: 8px;
 }
 
-.menu2-grid-uno {
+.menu2-grid-single {
   grid-template-columns: 1fr;
 }
 
 .menu2-item {
-  text-align: center;
   width: 180px;
+  max-width: 200px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.menu2-item:hover {
+  transform: translateY(-3px);
 }
 
 .menu2-circle {
   width: 145px;
   height: 145px;
-  margin: 0 auto 18px;
+  margin: 0 0 18px 0;
   border-radius: 50%;
-  background-color: #173f35;
+  background-color: #1e3932;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu2-circle img {
@@ -909,18 +920,24 @@ main {
   height: 78%;
   object-fit: cover;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.menu2-item:hover img {
+  transform: scale(1.05);
 }
 
 .menu2-item h3 {
-  font-size: 1.05rem;
-  line-height: 1.35;
-  color: #1e3932;
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000000;
+  font-weight: 600;
 }
 
+/* TABLET */
 @media (max-width: 980px) {
   .menu2-top h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .menu2-grid {
@@ -929,6 +946,7 @@ main {
   }
 }
 
+/* TABLET / CELULAR */
 @media (max-width: 768px) {
   .menu2-header {
     padding: 14px 20px;
@@ -936,7 +954,7 @@ main {
     gap: 12px;
   }
 
-  .menu2-derecha {
+  .menu2-right {
     flex-wrap: wrap;
     justify-content: flex-end;
   }
@@ -946,28 +964,29 @@ main {
     margin-right: 0;
     text-align: right;
   }
+
+  .menu2-page {
+    padding: 26px 22px 50px;
+  }
 }
 
+/* CELULAR */
 @media (max-width: 640px) {
-  .menu2-page {
-    padding: 28px 18px 50px;
-  }
-
   .menu2-kicker {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .menu2-top h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
-  .menu2-bloque h2 {
+  .menu2-block h2 {
     font-size: 1.5rem;
   }
 
   .menu2-grid {
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: start;
     gap: 28px;
     padding-left: 0;
   }
