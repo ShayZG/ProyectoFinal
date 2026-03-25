@@ -783,12 +783,12 @@ main {
 /*///////////////    menu 2, segundo intento   //////////////////////////////////////////////////////////////////////////////*/
 
 .menu2-header {
-  background-color: #ffffff;
+  background-color: #0a4d38;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .menu2-header .nav a {
-  color: #000000;
+  color: white;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -804,7 +804,7 @@ main {
 }
 
 .menu2-store {
-  color: #000000;
+  color: white;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -820,8 +820,8 @@ main {
 }
 
 .menu2-btn-light {
-  color: #000000;
-  border: 1px solid #000000;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
   background-color: transparent;
 }
 
@@ -831,7 +831,7 @@ main {
 
 .menu2-btn-dark {
   color: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid whitesmoke;
   background-color: #000000;
 }
 
