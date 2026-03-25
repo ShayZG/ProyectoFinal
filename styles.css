@@ -260,7 +260,10 @@ main {
   height: 340px;
 }
 
-.mini-img img {
+.img img,
+.mini-img img,
+.card-menu img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
