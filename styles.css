@@ -616,7 +616,7 @@ main {
   margin-bottom: 16px;
 }
 
-.menu-hero h1 {
+.menu-menu h1 {
   font-size: 3.2rem;
   margin-bottom: 14px;
 }
@@ -626,12 +626,12 @@ main {
 }
 
 /* tipos de cafes */
-.menu-categorias {
+.menu-cafes {
   padding: 60px 40px 80px;
   background-color: #f9f9f6;
 }
 
-.menu-categorias h2 {
+.menu-cafes h2 {
   text-align: center;
   font-size: 2rem;
   color: #1e3932;
