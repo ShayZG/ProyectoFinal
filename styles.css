@@ -690,6 +690,7 @@ main {
   color: #1e3932;
   font-weight: bold;
   background-color: transparent;
+  transition: 0.3s;
 }
 
 .btn-menu:hover {
@@ -753,5 +754,231 @@ main {
 
   .card-menu img {
     height: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .encabezado {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+  }
+
+  .claro,
+  .oscuro {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////    MENU 2 - estilo más parecido al original     //////////////////////////////////////////////////////////////////////////////*/
+
+.menu2-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.menu2-header .nav a {
+  color: #000000;
+}
+
+.menu2-header .nav a:hover {
+  color: #006241;
+}
+
+.menu2-derecha {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.menu2-store {
+  font-weight: bold;
+  color: #000000;
+  margin-right: 8px;
+}
+
+.menu2-btn-claro,
+.menu2-btn-oscuro {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.menu2-btn-claro {
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: transparent;
+}
+
+.menu2-btn-oscuro {
+  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #000000;
+}
+
+.menu2-btn-claro:hover {
+  background-color: rgba(0,0,0,0.06);
+}
+
+.menu2-btn-oscuro:hover {
+  background-color: #333333;
+}
+
+.menu2-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 38px 28px 70px;
+  background-color: #f6f6f4;
+}
+
+.menu2-top {
+  padding: 18px 0 26px;
+}
+
+.menu2-kicker {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1e3932;
+  margin-bottom: 8px;
+}
+
+.menu2-top h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  color: #1e3932;
+  max-width: 700px;
+}
+
+.menu2-bloque {
+  margin-top: 26px;
+}
+
+.menu2-bloque h2 {
+  font-size: 2rem;
+  color: #1e3932;
+  font-weight: 700;
+  padding: 18px 0 14px;
+  border-top: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+  margin-bottom: 34px;
+}
+
+.menu2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 42px 80px;
+  justify-items: start;
+  padding-left: 8px;
+}
+
+.menu2-grid-uno {
+  grid-template-columns: 1fr;
+}
+
+.menu2-item {
+  text-align: center;
+  width: 180px;
+}
+
+.menu2-circle {
+  width: 145px;
+  height: 145px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background-color: #173f35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.menu2-circle img {
+  width: 78%;
+  height: 78%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.menu2-item h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: #1e3932;
+  font-weight: 700;
+}
+
+@media (max-width: 980px) {
+  .menu2-top h1 {
+    font-size: 2.4rem;
+  }
+
+  .menu2-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 34px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu2-header {
+    padding: 14px 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .menu2-derecha {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .menu2-store {
+    width: 100%;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu2-page {
+    padding: 28px 18px 50px;
+  }
+
+  .menu2-kicker {
+    font-size: 1.5rem;
+  }
+
+  .menu2-top h1 {
+    font-size: 2rem;
+  }
+
+  .menu2-bloque h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu2-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 28px;
+    padding-left: 0;
+  }
+
+  .menu2-item {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .menu2-circle {
+    width: 130px;
+    height: 130px;
   }
 }
